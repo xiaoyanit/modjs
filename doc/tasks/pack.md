@@ -4,7 +4,7 @@
 ### Usage
 
 ```sh
-$ mod pack <source> [options]
+$ mod pack <src> [options]
 ```
 
 ### Options
@@ -12,7 +12,7 @@ $ mod pack <source> [options]
 #### dest
 
 
-<p> <b>&nbsp;&nbsp;&nbsp;&nbsp;Describe:</b> target pack file path</p>
+<p> <b>&nbsp;&nbsp;&nbsp;&nbsp;Describe:</b> Target pack file path</p>
 <hr>
 
 

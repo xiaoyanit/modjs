@@ -1,249 +1,102 @@
-# Mod - Modern project management and comprehension tool for the web [![Build Status](https://secure.travis-ci.org/modulejs/modjs.png?branch=master)](http://travis-ci.org/modulejs/modjs)
+<h2>Stopped developping on modjs and switched to <a href="http://github.com/chajs/cha"><img src="https://avatars0.githubusercontent.com/u/6767978?v=2&s=25">chajs</a></h2>
+            
+<p align="center">
+<a href="http://madscript.com/modjs" target="_blank">
+<img src="https://f.cloud.github.com/assets/677114/1474125/3f5b2460-4629-11e3-8a3d-6b4e0162e0cf.png" alt="Mod.js" style="max-width:100%;">
+</a>
+</p>
 
-![screenshot](https://raw.github.com/modulejs/modjs/master/example/screenshot.gif)
+<p align="center">
+<a href="http://badge.fury.io/js/modjs"><img src="https://badge.fury.io/js/modjs.png" alt="NPM version" style="max-width:100%;"></a>
+<a href="http://travis-ci.org/modjs/mod"><img src="https://secure.travis-ci.org/modjs/mod.png?branch=master" alt="Build Status" style="max-width:100%;"></a>
+</p>
 
-## What is Mod?
+Mod.js is a [task-based](https://github.com/taskjs/spec) workflow tooling for web, it helps developers quickly build robust and high-performance HTML5 applications.
 
-Mod is a task-based build tool for the web, it help developers quickly build robust and high-performance web applications.
+## Why Mod.js?
+* Focus on the workflow of web development
+* Much built-in tasks, most pleasant out-of-the-box experience
+    - Built-in source minify: `JS, CSS, HTML`
+    - Built-in modular JS compile: `AMD, CMD (will support ES6 Module, CommonJS Module soon)`
+    - Built-in CSS @import file combination
+    - Built-in source stripping, automatically remove debugging code
+    - Built-in basic file operation: `cat, rm, mv, mkdir, cp, rev`
+    - Built-in file watcher, trigger custom tasks when file change
+* More simplicity plugin mechanism, auto-install plugins
+* Configuration less(even zero), do more
+    - Build by html: `mod build index.html`
+* Compatible with [Grunt](http://gruntjs.com) plugins, with literally hundreds of plugins to choose from
 
 ## Installation
-
-[Mod](https://npmjs.org/package/modjs) is installed using [NPM(Node Package Manager)](http://npmjs.org/)
-
+[Mod.js](https://npmjs.org/package/modjs) is installed using [NPM(Node Package Manager)](http://npmjs.org/)
 ```sh
-$ npm install -g modjs
+$ npm install modjs -g
 ```
 
+## Tutorials
+* [Getting Started](https://github.com/modjs/mod/tree/master/doc/tutorial/getting-started.md)
+* [Configuring Tasks](https://github.com/modjs/mod/blob/master/doc/tutorial/configuring-tasks.md)
+* [Creating Plugins](https://github.com/modjs/mod/tree/master/doc/tutorial/creating-plugins.md)
 
-## Wiki
-* [Project Roadmap](https://github.com/modulejs/modjs/wiki/Roadmap)
-* [Mod Plugin List](https://github.com/modulejs/modjs/wiki/Plugins)
-* [QQ Find Modfile Example](https://github.com/modulejs/modjs/blob/master/example/Modfile)
+## Documents
+* [Built-in Task](https://github.com/modjs/mod/tree/master/doc/tasks)
+* [Plugin API](https://github.com/modjs/mod/tree/master/doc/api)
 
 ## Quick Build Demo
-* [RequireJS Project Build](https://github.com/modulejs/modjs/tree/master/test/buildrequirejs)
-* [SeaJS Project Build](https://github.com/modulejs/modjs/tree/master/test/buildseajs)
+* [Plain Project Build](https://github.com/modjs/mod/tree/master/example/buildnormal)
+* [Mobile Project Build](https://github.com/modjs/mod/tree/master/example/buildmobile)
+* [RequireJS Project Build](https://github.com/modjs/mod/tree/master/example/buildrequirejs)
 
-## Why another one?
+## Built-in Task Examples
+* [Concatenate JS Files](https://github.com/modjs/mod/tree/master/example/catjs)
+* [Concatenate CSS Files](https://github.com/modjs/mod/tree/master/example/catcss)
+* [AMD Modules Compile](https://github.com/modjs/mod/tree/master/example/compileamd)
+* [CMD Modules Compile](https://github.com/modjs/mod/tree/master/example/compilecmd)
+* [Mutil-page Modules Compile](https://github.com/modjs/mod/tree/master/example/compilemultipage)
+* [JS Conditional Compilation](https://github.com/modjs/mod/tree/master/example/compilejs)
+* [CSS Conditional Compilation](https://github.com/modjs/mod/tree/master/example/compilecss)
+* [HTML Conditional Compilation](https://github.com/modjs/mod/tree/master/example/compilehtml)
+* [JS Minify](https://github.com/modjs/mod/tree/master/example/minjs)
+* [CSS Minify](https://github.com/modjs/mod/tree/master/example/mincss)
+* [HTML Minify](https://github.com/modjs/mod/tree/master/example/minhtml)
+* [Code Stripping](https://github.com/modjs/mod/tree/master/example/stripcode)
+* [EOL Stripping](https://github.com/modjs/mod/tree/master/example/stripeol)
+* [Tab Stripping](https://github.com/modjs/mod/tree/master/example/striptab)
+* [Inline Images DataURI](https://github.com/modjs/mod/tree/master/example/datauri)
+* [Make Dir](https://github.com/modjs/mod/tree/master/example/mkdir)
+* [Copy Files](https://github.com/modjs/mod/tree/master/example/cp)
+* [String Replace](https://github.com/modjs/mod/tree/master/example/replace)
 
-* More built-in tasks
-* More simplicity to use
-* Configuration less(even zero), do more
-* Business background, community support
+## Plugins Examples
+* [NPM Task: mod-stylus](https://github.com/modjs/mod/tree/master/example/pluginnpmtask)
+* [Local Task: mytask.js](https://github.com/modjs/mod/tree/master/example/pluginlocaltask)
+* [Grunt Task: grunt-contrib-concat](https://github.com/modjs/mod/tree/master/example/plugingrunttask)
 
-## Features
-
-* Task-based builds
-* Minify everything: JS, CSS, HTML, Images
-* Source linting: JS, CSS
-* Modular JS for the web: AMD, CMD(will support CommonJS soon)
-* CSS import file combination
-* HTML conditional comments for target build
-* Source stripping, automatically remove debugging code
-* Common action: cat, rm, mv, mkdir, cp, hash, pack
-* File watcher, trigger custom tasks when file change
-* Live Browser Reloads, instantly see changes in your browser
-* Image Optimization, reduce JPEG, PNG and GIF file sizes
-* Project boilerplate generate
-* Built-in Web Server
-* Extensible, easily write plugins
-* Works on most platforms: Windows, Linux, Mac OS X, Unix...
-
-## Built-in Tasks
-Mod supports a powerful set of high-level commands:
-
-* [help](https://github.com/modulejs/modjs/tree/master/doc/tasks/help.md) - Get help on mod
-* [min](https://github.com/modulejs/modjs/tree/master/doc/tasks/min.md) - Minify JavaScript/CSS/HTML/Image source
-* [lint](https://github.com/modulejs/modjs/tree/master/doc/tasks/lint.md) - Validate JavaScript/CSS source
-* [compile](https://github.com/modulejs/modjs/tree/master/doc/tasks/compile.md) - Compile JavaScript/CSS/HTML source
-* [create](https://github.com/modulejs/modjs/tree/master/doc/tasks/create.md) - Generate a project skeleton include project directory
-* [init](https://github.com/modulejs/modjs/tree/master/doc/tasks/init.md) - Generate a project skeleton in target directory
-* [server](https://github.com/modulejs/modjs/tree/master/doc/tasks/server.md) - Start a static web server
-* [pack](https://github.com/modulejs/modjs/tree/master/doc/tasks/pack.md) - Create a tarball from a module
-* [hash](https://github.com/modulejs/modjs/tree/master/doc/tasks/hash.md) - Rename file with it hash value
-* [build](https://github.com/modulejs/modjs/tree/master/doc/tasks/build.md) - Build the project by convention
-* [replace](https://github.com/modulejs/modjs/tree/master/doc/tasks/replace.md) - Replace the contents of files
-* [cat](https://github.com/modulejs/modjs/tree/master/doc/tasks/cat.md) - Concatenate the content of files
-* [cp](https://github.com/modulejs/modjs/tree/master/doc/tasks/cp.md) - Copy one or more files to another location
-* [mkdir](https://github.com/modulejs/modjs/tree/master/doc/tasks/mkdir.md) - Create new folder
-* [mv](https://github.com/modulejs/modjs/tree/master/doc/tasks/mv.md) - Move or rename files or directories
-* [rm](https://github.com/modulejs/modjs/tree/master/doc/tasks/rm.md) - Remove files
-* [strip](https://github.com/modulejs/modjs/tree/master/doc/tasks/strip.md) - Source stripping
-
-
-## Simple Examples
-* [Concatenate Files](https://github.com/modulejs/modjs/tree/master/test/cat)
-* [CMD Modules Compile](https://github.com/modulejs/modjs/tree/master/test/compilecmd)
-* [CSS Modules Compile](https://github.com/modulejs/modjs/tree/master/test/compilecss)
-* [JPG Image Compression](https://github.com/modulejs/modjs/tree/master/test/minjpg)
-* [PNG Image Compression](https://github.com/modulejs/modjs/tree/master/test/minpng)
-* [JS Minify](https://github.com/modulejs/modjs/tree/master/test/minjs)
-* [CSS Minify](https://github.com/modulejs/modjs/tree/master/test/mincss)
-* [Source Stripping](https://github.com/modulejs/modjs/tree/master/test/strip)
-* [Inline Images DataURI](https://github.com/modulejs/modjs/tree/master/test/datauri)
-* [CSS Images Sprites](https://github.com/modulejs/modjs/tree/master/test/sprite)
-
-## Modfile
-
-Like Makefile/Rakefile, Modfile is implemented as a NodeJS module：
-
-```js
-module.exports = {
-    plugins: {
-        sprite: "mod-sprite",
-        datauri: "mod-datauri"
-    },
-
-    tasks: {
-        "rm" : {
-            "target": "./dist"
-        },
-        "min" : {
-            "img": {
-                "source": "./img/*.png",
-                "dest": "./dist/img"
-            },
-            "css": {
-                "source": "./dist/css/*.css",
-                "dest": "./dist/css"
-            },
-            "html": {
-                "source": "*.html",
-                "dest": "./dist/"
-            },
-            "js": {
-                "source": "./dist/js/*.js",
-                "dest": "./dist/js"
-            }
-        },
-        "cat": {
-            "source":["./dist/js/a.js","./dist/js/b.js"],
-            "dest":  "./dist/js/ab.js"
-        },
-
-        "watch" : {
-            "source": ["*"],
-            "tasks": ""
-        },
-    },
-
-    targets: {
-        dist: "rm min cat"
-    }
-};
-```
-
-Then run 'dist' target:
-
-```sh
-$ mod dist
-```
-
-## Compression Table
-
-```sh
-| Feature                  | Mod    | Grunt      | Yeoman    |
-|--------------------------+--------+------------+-----------|
-| Minifier                 | ✓     | ✓         | ✓        |
-| Linter                   | ✓     | ✓         | ✓        |
-| HTML Conditional Comments| ✓     | ✗         | ✗        |
-| CSS Combination          | ✓     | ✗         | ✗        |
-| Image Optimization       | ✓     | ✗         | ✓        |
-| Source stripper          | ✓     | ✗         | ✗        |
-| Modular JS               | ✓     | ✗         | ✗        |
-| File Watcher             | ✓     | ✓         | ✓        |
-| Live Browser Reloads     | ✓     | ✗         | ✓        |
-| Built-in WebServer       | ✓     | ✓         | ✓        |
-| Skeletons (Boilerplates) | ✓     | ✓         | ✓        |
-| Headless browser Testing | ✗     | ✓         | ✓        |
-| Extensible plugins       | ✓     | ✓         | ✓        |
-| Cross-platform           | ✓     | ✓         | ✗        |
-```
-
-## Custom Tasks
-
-In addition to the built-in tasks, you can create your own tasks:
-
-### Plugin Example
-```js
-exports.summary = 'my task';
-
-exports.usage = '<source> [options]';
-
-exports.options = {
-    "dest" : {
-        alias : 'd'
-        ,default : '<source>'
-        ,describe : 'destination file'
-    },
-
-    "charset" : {
-        alias : 'c'
-        ,default : 'utf-8'
-        ,describe : 'file encoding type'
-    }
-};
-
-exports.run = function (options, callback) {
-    var target = options.target;
-    // ...
-};
-```
-
-### Plugin API
-```js
-exports.taskName
-exports.loadTask()
-exports.runTask()
-
-exports.getArgs()
-exports.getConfig()
-exports.getTaskConfig()
-
-exports.log()
-exports.error()
-exports.warn()
-exports.debug()
-
-exports.file
-exports.utils
-
-exports._
-exports.async
-exports.request
-exports.prompt
-```
+## IDE Support
+* [Sublime-Mod](https://github.com/yuanyan/sublime-mod)
 
 ## Platform Support
-
-Mod support Windows, OS X, Linux.
-
+Mod support Windows, OS X, Linux...
 
 ## Issue Submission
+Submit a [new issue](https://github.com/modjs/mod/issues/new).
 
-Submit a [new issue](https://github.com/modulejs/modjs/issues/new).
+## Release History
+
+* 2014-02-28    v0.4.6    Fix r.js build error.
+* 2014-02-20    v0.4.5    Remove built-in `server` task.     
 
 ## About
-
 Mod is an open-source project by [Tencent](http://www.tencent.com/en-us/) which builds on top of [Node.js](https://nodejs.org).
 We utilize a number of useful open-source solutions including:
 
 * UglifyJS
-* JSHint
 * CleanCSS
-* CSSLint
 * HTMLMinifiler
-* Requirejs
-* Twitter Bootstrap
-* HTML5 Boilerplate
+* RequireJS
 
-## Used by people within
-
-![qqfind](http://0.web.qstatic.com/webqqpic/pubapps/0/50/images/big.png)
-![qqconnect](http://0.web.qstatic.com/webqqpic/pubapps/0/16/images/big.png)
-
-[Tell us you use modjs!](https://github.com/modulejs/modjs/issues/22)
+## Used by people within <a href="https://github.com/modjs/mod/issues/22">(JOIN US)</a>
+![Tencent](http://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Tencent_Logo.svg/200px-Tencent_Logo.svg.png)
 
 ## License
-
-Mod is released under a [MIT](http://opensource.org/licenses/mit-license.php) license.
+Mod.js is released under a [MIT](http://yuanyan.mit-license.org/) license.

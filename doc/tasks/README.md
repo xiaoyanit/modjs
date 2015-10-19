@@ -1,25 +1,19 @@
-## Tasks
+## Built-in Tasks
+Mod supports a powerful set of high-level tasks:
 
-* [help](https://github.com/modulejs/modjs/tree/master/doc/tasks/help.md) - Get help on mod 
-* [min](https://github.com/modulejs/modjs/tree/master/doc/tasks/min.md) - Minify JavaScript/CSS/HTML/Image source 
-* [lint](https://github.com/modulejs/modjs/tree/master/doc/tasks/lint.md) - Validate JavaScript/CSS source 
-* [compile](https://github.com/modulejs/modjs/tree/master/doc/tasks/compile.md) - Compile JavaScript/CSS/HTML source 
-* [create](https://github.com/modulejs/modjs/tree/master/doc/tasks/create.md) - Generate a project skeleton include project directory 
-* [init](https://github.com/modulejs/modjs/tree/master/doc/tasks/init.md) - Generate a project skeleton in target directory 
-* [server](https://github.com/modulejs/modjs/tree/master/doc/tasks/server.md) - Start a static web server 
-* [pack](https://github.com/modulejs/modjs/tree/master/doc/tasks/pack.md) - Create a tarball from a module 
-* [hash](https://github.com/modulejs/modjs/tree/master/doc/tasks/hash.md) - Rename file with it hash value 
-* [build](https://github.com/modulejs/modjs/tree/master/doc/tasks/build.md) - Build the project by convention 
-* [replace](https://github.com/modulejs/modjs/tree/master/doc/tasks/replace.md) - Replace the contents of files 
-* [cat](https://github.com/modulejs/modjs/tree/master/doc/tasks/cat.md) - Concatenate the content of files 
-* [cp](https://github.com/modulejs/modjs/tree/master/doc/tasks/cp.md) - Copy one or more files to another location 
-* [mkdir](https://github.com/modulejs/modjs/tree/master/doc/tasks/mkdir.md) - Create new folder 
-* [mv](https://github.com/modulejs/modjs/tree/master/doc/tasks/mv.md) - Move or rename files or directories 
-* [rm](https://github.com/modulejs/modjs/tree/master/doc/tasks/rm.md) - Remove files 
-* [strip](https://github.com/modulejs/modjs/tree/master/doc/tasks/strip.md) - Source stripping 
-
-
-
-
-
-
+* [help](https://github.com/modjs/mod/tree/master/doc/tasks/help.md) - get help on mod 
+* [build](https://github.com/modjs/mod/tree/master/doc/tasks/build.md) - build project with html 
+* [init](https://github.com/modjs/mod/tree/master/doc/tasks/init.md) - generate project skeleton from template 
+* [watch](https://github.com/modjs/mod/tree/master/doc/tasks/watch.md) - run predefined tasks whenever watched files change 
+* [deploy](https://github.com/modjs/mod/tree/master/doc/tasks/deploy.md) - remote deployment via ssh 
+* [download](https://github.com/modjs/mod/tree/master/doc/tasks/download.md) - download resource from URI 
+* [compile](https://github.com/modjs/mod/tree/master/doc/tasks/compile.md) - compile JavaScript/CSS/HTML source 
+* [min](https://github.com/modjs/mod/tree/master/doc/tasks/min.md) - minify JavaScript/CSS/HTML source 
+* [replace](https://github.com/modjs/mod/tree/master/doc/tasks/replace.md) - replace the contents of files 
+* [cat](https://github.com/modjs/mod/tree/master/doc/tasks/cat.md) - concatenate the content of files 
+* [cp](https://github.com/modjs/mod/tree/master/doc/tasks/cp.md) - copy one or more files to another location 
+* [mkdir](https://github.com/modjs/mod/tree/master/doc/tasks/mkdir.md) - make a new directory 
+* [mv](https://github.com/modjs/mod/tree/master/doc/tasks/mv.md) - move or rename files or directories 
+* [rm](https://github.com/modjs/mod/tree/master/doc/tasks/rm.md) - remove files 
+* [rev](https://github.com/modjs/mod/tree/master/doc/tasks/rev.md) - rename file with it hash value 
+* [strip](https://github.com/modjs/mod/tree/master/doc/tasks/strip.md) - source stripping 

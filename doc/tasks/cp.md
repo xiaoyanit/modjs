@@ -4,7 +4,7 @@
 ### Usage
 
 ```sh
-$ mod cp <source> [options]
+$ mod cp <src> [options]
 ```
 
 ### Options
@@ -12,19 +12,49 @@ $ mod cp <source> [options]
 #### dest
 
 
-<p> <b>&nbsp;&nbsp;&nbsp;&nbsp;Describe:</b> destination directory or file</p>
+<p> <b>&nbsp;&nbsp;&nbsp;&nbsp;Describe:</b> Destination directory or file</p>
 <hr>
 
-#### parent
-<p> <b>&nbsp;&nbsp;&nbsp;&nbsp;Type:</b> <code>boolean</code></p>
+#### flatten
+
+
+<p> <b>&nbsp;&nbsp;&nbsp;&nbsp;Describe:</b> Remove all path parts from generated dest paths</p>
+<hr>
+
+#### recursive
+
+<p> <b>&nbsp;&nbsp;&nbsp;&nbsp;Default:</b> <code>true</code></p>
+<p> <b>&nbsp;&nbsp;&nbsp;&nbsp;Describe:</b> Copy directories recursively</p>
+<hr>
+
+#### verbose
+
+<p> <b>&nbsp;&nbsp;&nbsp;&nbsp;Default:</b> <code>true</code></p>
+<p> <b>&nbsp;&nbsp;&nbsp;&nbsp;Describe:</b> Shows file/directory names after they are copied</p>
+<hr>
+
+#### force
+
+<p> <b>&nbsp;&nbsp;&nbsp;&nbsp;Default:</b> <code>true</code></p>
+<p> <b>&nbsp;&nbsp;&nbsp;&nbsp;Describe:</b> Force overwriting the existing files</p>
+<hr>
+
+#### update
+
 <p> <b>&nbsp;&nbsp;&nbsp;&nbsp;Default:</b> <code>false</code></p>
-<p> <b>&nbsp;&nbsp;&nbsp;&nbsp;Describe:</b> include source parent directory</p>
+<p> <b>&nbsp;&nbsp;&nbsp;&nbsp;Describe:</b> Copy only when the SOURCE file is newer than the destination file or when the destination file is missing</p>
 <hr>
 
-#### filter
+#### backup
 
+<p> <b>&nbsp;&nbsp;&nbsp;&nbsp;Default:</b> <code>true</code></p>
+<p> <b>&nbsp;&nbsp;&nbsp;&nbsp;Describe:</b> Make a backup of each existing destination file</p>
+<hr>
 
-<p> <b>&nbsp;&nbsp;&nbsp;&nbsp;Describe:</b> a RegExp instance, against which each file name is tested to determine whether to copy it or not, or a function taking single parameter: copied file name, returning true or false, determining whether to copy file or not.</p>
+#### parents
+
+<p> <b>&nbsp;&nbsp;&nbsp;&nbsp;Default:</b> <code>false</code></p>
+<p> <b>&nbsp;&nbsp;&nbsp;&nbsp;Describe:</b> Full path to be copied to the destination directory</p>
 <hr>
 
 

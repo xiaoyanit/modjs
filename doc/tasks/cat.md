@@ -4,21 +4,28 @@
 ### Usage
 
 ```sh
-$ mod cat <source> [options]
+$ mod cat <src> [options]
 ```
 
 ### Options
 
 #### dest
 
-<p> <b>&nbsp;&nbsp;&nbsp;&nbsp;Default:</b> <code><source></code></p>
-<p> <b>&nbsp;&nbsp;&nbsp;&nbsp;Describe:</b> destination file</p>
+<p> <b>&nbsp;&nbsp;&nbsp;&nbsp;Default:</b> <code><src></code></p>
+<p> <b>&nbsp;&nbsp;&nbsp;&nbsp;Describe:</b> Destination file</p>
 <hr>
 
 #### charset
 
 <p> <b>&nbsp;&nbsp;&nbsp;&nbsp;Default:</b> <code>utf-8</code></p>
-<p> <b>&nbsp;&nbsp;&nbsp;&nbsp;Describe:</b> file encoding type</p>
+<p> <b>&nbsp;&nbsp;&nbsp;&nbsp;Describe:</b> File encoding type</p>
+<hr>
+
+#### endings
+
+<p> <b>&nbsp;&nbsp;&nbsp;&nbsp;Default:</b> <code>
+</code></p>
+<p> <b>&nbsp;&nbsp;&nbsp;&nbsp;Describe:</b> Make sure each file endings with newline</p>
 <hr>
 
 
